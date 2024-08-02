@@ -1,0 +1,131 @@
+/* Typography & Universal Styles */
+
+:root {
+  --merriweather: 'Merriweather', sans-serif;
+  --dark-gray: #3f3f46;
+  --gray: #64748b;
+  --light-gray: #e5e7eb;
+  --green: #4d7c0f;
+  --red: #b91c1c;
+  --yellow: #eab308;
+}
+
+@font-face {
+  font-family: 'CooperHewitt'; 
+  src: url("assignment-two-responsive-nav-assets/CooperHewitt-Heavy.otf") format("opentype");
+}
+
+body {
+  font-family: var(--merriweather);
+  font-family: 'CooperHewitt-Heavy.otf', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--light-gray);
+  text-decoration: none;
+}
+
+.main-menu a {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+svg {
+  width: 3vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner-container {
+  max-width: 1350px;
+  margin: auto;
+  padding: 0.5rem;
+}
+
+/* Navigation */
+
+header {
+  background-color: var(--dark-gray);
+}
+
+.main-menu {
+  display: flex;
+}
+
+.main-menu li {
+  padding: 0 2rem;
+}
+
+.sub-menu {
+  padding: 0 0 1rem 0;
+}
+
+.sub-menu a {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+nav li ul {
+  display: none;
+}
+
+.main-menu ul {
+  position: absolute;
+  text-align: left;
+  margin-top: 1rem;
+  background-color: var(--dark-gray);
+  text-align: center;
+}
+
+.main-menu li:hover > ul,
+.main-menu li:focus-within > ul,
+.main-menu li ul:hover {
+  visibility: visible;
+  display: block;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (min-width: 320px) {
+
+  body {
+      background-color: green;
+  }
+
+}
+
+@media screen and (min-width: 820px) {
+
+
+  body {
+      background-color: gray;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+
+}
+
+@media screen and (min-width: 1350px) {
+
+
+  body {
+      background-color: antiquewhite;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+}
